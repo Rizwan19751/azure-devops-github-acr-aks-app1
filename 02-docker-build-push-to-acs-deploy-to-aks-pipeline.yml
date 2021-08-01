@@ -85,7 +85,7 @@ stages:
     displayName: Deploy-QA
     pool:
       vmImage: $(vmImageName)
-    environment: 'Rizwan19751azuredevopsgithubacraksapp1.qa'
+    environment: 'Rizwan19751azuredevopsgithubacraksapp1.QA'
     strategy:
       runOnce:
         deploy:
