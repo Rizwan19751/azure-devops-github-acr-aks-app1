@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          CICD Pipelien On Kubernetes Cluster
+         <h1> CICD Pipelien On Kubernetes Cluster</h1>
         </p>
         <a
           className="App-link"
