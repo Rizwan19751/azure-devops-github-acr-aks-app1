@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: racatapp 
-          image: azurecontaineraks.azurecr.io/racatapp
+          image: azurecontaineraks.azurecr.io/custom2aksnginxapp1:8a908870d4bb0894c036bc56691d8fe3f8fc3937
           ports:
           - containerPort: 80
