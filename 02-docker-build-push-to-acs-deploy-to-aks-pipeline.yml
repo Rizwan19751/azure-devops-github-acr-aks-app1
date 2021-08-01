@@ -78,7 +78,7 @@ stages:
                 $(containerRegistry)/$(imageRepository):$(tag)
 - stage: Deploy_QA
   displayName: QA-stage
-  dependsOn: Deploy-Dev
+  dependsOn: Deploy_Dev
 
   jobs:
   - deployment: Deploy
