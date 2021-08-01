@@ -44,7 +44,7 @@ stages:
     - upload: manifests
       artifact: manifests
 
-- stage: Deploy-Dev
+- stage: Deploy_Dev
   displayName: Deploy stage
   dependsOn: Build
 
@@ -76,7 +76,7 @@ stages:
                 $(imagePullSecret)
               containers: |
                 $(containerRegistry)/$(imageRepository):$(tag)
-- stage: Deploy-QA
+- stage: Deploy_QA
   displayName: QA-stage
   dependsOn: Deploy-Dev
 
