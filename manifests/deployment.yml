@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: racatapp 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: racatapp
+  template:
+    metadata:
+      labels:
+        app: racatapp 
+    spec:
+      containers:
+        - name: racatapp 
+          image: azurecontaineraks.azurecr.io/racatapp
+          ports:
+          - containerPort: 80
