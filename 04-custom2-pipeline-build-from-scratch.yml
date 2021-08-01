@@ -29,9 +29,7 @@ stages:
           repository: 'custom2aksnginxapp1'
           command: 'buildAndPush'
           Dockerfile: '**/Dockerfile'
-          tags: 
-           # $(tag)
-            $(Build.SourceVersion)
+          tags: '$(Build.SourceVersion)'
           # Task-2: Copy kube-manifest files to Build Artifact Directory
           # Task-3: Publish build articats to Azure Pipelines
       ## Publish Artifacts pipeline code in addition to Build and Push          
