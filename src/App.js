@@ -8,7 +8,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
          <h1> CICD Pipelien On Kubernetes Cluster H</h1>
-         <h2> Hello Rizwan AHmed </h2>
+         <h2> New Stages is Added </h2>
         </p>
         <a
           className="App-link"
